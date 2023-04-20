@@ -1,0 +1,72 @@
+department 
+	dept_id (1,2,3) - PK
+	dname
+	location
+	
+	
+1:M	
+employee 
+	emp_id
+	ename
+	dept_id FK (1,1,1)
+	
+	
+
+Write a query to display employee details along with dept
+	
+	
+	
+	SELECT employee.ename,department.location
+		FROM department INNER JOIN employee ON department.dept_id = employee.dept_id;
+
+	
+	SELECT e.ename,d.location 
+	FROM department d INNER JOIN employee e ON d.dept_id = e.dept_id;
+	
+	
+
+
+
+Git
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+1:M	
+project
+	project_id PK 
+	emp_id (FK)
+	
+
+1:M	
+employee 
+	emp_id
+	ename
+
+	
+1:M	
+project
+	project_id PK 
+
+
+
+
